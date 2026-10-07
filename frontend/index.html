@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca Universitaria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Biblioteca Universitaria</h1>
+    <p>Consulta el catálogo y solicita tu préstamo</p>
+  </header>
+
+  <main>
+    <section class="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo">Catálogo</h2>
+
+      <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+
+      <div class="rejilla">
+        <article class="tarjeta libro">
+          <span class="tipo">Libro</span>
+          <h3>Introducción a la Programación con Python</h3>
+          <p class="dato">Autor: Eric Matthes</p>
+          <p class="dato">Código: L-001 · Préstamo: 7 días</p>
+          <p class="estado disponible">Disponible</p>
+          <button class="boton-prestamo" data-titulo="Introducción a la Programación con Python">Solicitar préstamo</button>
+        </article>
+
+        <article class="tarjeta libro">
+          <span class="tipo">Libro</span>
+          <h3>Estructuras de Datos y Algoritmos</h3>
+          <p class="dato">Autor: Mark Allen Weiss</p>
+          <p class="dato">Código: L-002 · Préstamo: 7 días</p>
+          <p class="estado prestado">Prestado</p>
+          <button class="boton-prestamo" data-titulo="Estructuras de Datos y Algoritmos" disabled>No disponible</button>
+        </article>
+
+        <article class="tarjeta revista">
+          <span class="tipo">Revista</span>
+          <h3>Ciencia y Tecnología Hoy</h3>
+          <p class="dato">Edición No. 45</p>
+          <p class="dato">Código: R-001 · Préstamo: 3 días</p>
+          <p class="estado disponible">Disponible</p>
+          <button class="boton-prestamo" data-titulo="Ciencia y Tecnología Hoy">Solicitar préstamo</button>
+        </article>
+
+        <article class="tarjeta revista">
+          <span class="tipo">Revista</span>
+          <h3>Innovación Universitaria</h3>
+          <p class="dato">Edición No. 12</p>
+          <p class="dato">Código: R-002 · Préstamo: 3 días</p>
+          <p class="estado disponible">Disponible</p>
+          <button class="boton-prestamo" data-titulo="Innovación Universitaria">Solicitar préstamo</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Equipo 7 · Programación Orientada a Objetos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
